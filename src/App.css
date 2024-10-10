@@ -1,0 +1,183 @@
+/* General App Container */
+.app-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #3b3f5c;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    background-color: #00c9b7;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.controls:hover {
+    background-color: #00a896;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+/* Popup for Grouping and Sorting */
+.popup {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.popup-grouping, .popup-sorting {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Kanban Board Columns */
+.dashboard-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ticket-column {
+    width: 20%;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.ticket-column:hover {
+    transform: translateY(-5px);
+}
+
+.ticket-column h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #3b3f5c;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00c9b7;
+    padding-bottom: 10px;
+}
+
+/* Tickets */
+.ticket {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.ticket:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-icon {
+    background-color: #3b3f5c;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ticket-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Priority Tags */
+.priority-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.priority-0 {
+    background-color: #6c757d;
+}
+
+.priority-1 {
+    background-color: #28a745;
+}
+
+.priority-2 {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.priority-3 {
+    background-color: #dc3545;
+}
+
+.priority-4 {
+    background-color: #ff073a;
+}
+
+/* Loading and Error States */
+.loading, .error-message {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #3b3f5c;
+}
